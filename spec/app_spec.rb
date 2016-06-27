@@ -11,4 +11,7 @@ describe('String#title_case') do
   it "does not capitalize designated words" do
     expect('batman and robin'.title_case()).to(eq('Batman and Robin'))
   end
+  it "capitalizes designated words if they are the first word" do
+    expect('the dark knight'.title_case()).to(eq('The Dark Knight'))
+  end
 end
