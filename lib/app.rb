@@ -1,5 +1,9 @@
 class String
   define_method(:title_case) do
-    self.capitalize!()
+    title_array = self.split()
+    title_array.each() do |word|
+      word.capitalize!()
+    end
+  title_array.join(" ")  
   end
 end
