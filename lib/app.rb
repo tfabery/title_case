@@ -3,6 +3,7 @@ class String
     no_capitalization_array = ["A", "An", "And", "At", "But", "By", "For", "In", "Nor", "Of", "On", "Or", "So", "The", "To", "Up", "Yet"]
     title_array = self.split()
     title_array.each() do |word|
+      word.downcase!()
       word.capitalize!()
     end
     title_array.each() do |word|
