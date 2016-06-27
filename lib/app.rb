@@ -5,8 +5,6 @@ class String
     title_array.each() do |word|
       word.downcase!()
       word.capitalize!()
-    end
-    title_array.each() do |word|
       no_capitalization_array.each() do |no|
         if word.!=(title_array[0]) && word.==(no)
           word.downcase!()
